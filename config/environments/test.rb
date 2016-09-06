@@ -1,0 +1,1 @@
+Application.eager_load!

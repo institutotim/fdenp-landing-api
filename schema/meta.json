@@ -1,0 +1,10 @@
+{
+  "description": "API for the UNICEF landing page",
+  "id": "zup-unicef-api",
+  "links": [{
+    "description": "Git repository",
+    "href": "http://github.com/ntxcode/zup-unicef-api",
+    "rel": "self"
+  }],
+  "title": "ZUP UNICEF API"
+}

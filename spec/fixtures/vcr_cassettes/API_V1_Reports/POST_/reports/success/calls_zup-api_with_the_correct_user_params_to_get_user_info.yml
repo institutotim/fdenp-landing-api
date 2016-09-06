@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=R.%20Humberto%20Lu%C3%ADs%20Gastaldo%2010,%20Jardim%20do%20Mar,%20,%20Brasil&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 17 Sep 2015 02:48:11 GMT
+      Expires:
+      - Fri, 18 Sep 2015 02:48:11 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '679'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICAicmVzdWx0cyIgOiBbCiAgICAgIHsKICAgICAgICAgImFkZHJlc3Nf
+        Y29tcG9uZW50cyIgOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAg
+        ImxvbmdfbmFtZSIgOiAiMTAiLAogICAgICAgICAgICAgICAic2hvcnRfbmFt
+        ZSIgOiAiMTAiLAogICAgICAgICAgICAgICAidHlwZXMiIDogWyAic3RyZWV0
+        X251bWJlciIgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAg
+        ICAgICAgICAgICJsb25nX25hbWUiIDogIlJ1YSBIdW1iZXJ0byBMdcOtcyBH
+        YXN0YWxkbyIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJSLiBI
+        dW1iZXJ0byBMdcOtcyBHYXN0YWxkbyIsCiAgICAgICAgICAgICAgICJ0eXBl
+        cyIgOiBbICJyb3V0ZSIgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7
+        CiAgICAgICAgICAgICAgICJsb25nX25hbWUiIDogIkphcmRpbSBkbyBNYXIi
+        LAogICAgICAgICAgICAgICAic2hvcnRfbmFtZSIgOiAiSmFyZGltIGRvIE1h
+        ciIsCiAgICAgICAgICAgICAgICJ0eXBlcyIgOiBbICJuZWlnaGJvcmhvb2Qi
+        LCAicG9saXRpY2FsIiBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsK
+        ICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAiU8OjbyBCZXJuYXJkbyBk
+        byBDYW1wbyIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJTw6Nv
+        IEJlcm5hcmRvIGRvIENhbXBvIiwKICAgICAgICAgICAgICAgInR5cGVzIiA6
+        IFsgImxvY2FsaXR5IiwgInBvbGl0aWNhbCIgXQogICAgICAgICAgICB9LAog
+        ICAgICAgICAgICB7CiAgICAgICAgICAgICAgICJsb25nX25hbWUiIDogIlPD
+        o28gQmVybmFyZG8gZG8gQ2FtcG8iLAogICAgICAgICAgICAgICAic2hvcnRf
+        bmFtZSIgOiAiU8OjbyBCZXJuYXJkbyBkbyBDYW1wbyIsCiAgICAgICAgICAg
+        ICAgICJ0eXBlcyIgOiBbICJhZG1pbmlzdHJhdGl2ZV9hcmVhX2xldmVsXzIi
+        LCAicG9saXRpY2FsIiBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsK
+        ICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAiU8OjbyBQYXVsbyIsCiAg
+        ICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJTUCIsCiAgICAgICAgICAg
+        ICAgICJ0eXBlcyIgOiBbICJhZG1pbmlzdHJhdGl2ZV9hcmVhX2xldmVsXzEi
+        LCAicG9saXRpY2FsIiBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsK
+        ICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAiQnJhemlsIiwKICAgICAg
+        ICAgICAgICAgInNob3J0X25hbWUiIDogIkJSIiwKICAgICAgICAgICAgICAg
+        InR5cGVzIiA6IFsgImNvdW50cnkiLCAicG9saXRpY2FsIiBdCiAgICAgICAg
+        ICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgImxvbmdfbmFt
+        ZSIgOiAiMDk3MjYtNDM1IiwKICAgICAgICAgICAgICAgInNob3J0X25hbWUi
+        IDogIjA5NzI2LTQzNSIsCiAgICAgICAgICAgICAgICJ0eXBlcyIgOiBbICJw
+        b3N0YWxfY29kZSIgXQogICAgICAgICAgICB9CiAgICAgICAgIF0sCiAgICAg
+        ICAgICJmb3JtYXR0ZWRfYWRkcmVzcyIgOiAiUi4gSHVtYmVydG8gTHXDrXMg
+        R2FzdGFsZG8sIDEwIC0gSmFyZGltIGRvIE1hciwgU8OjbyBCZXJuYXJkbyBk
+        byBDYW1wbyAtIFNQLCAwOTcyNi00MzUsIEJyYXppbCIsCiAgICAgICAgICJn
+        ZW9tZXRyeSIgOiB7CiAgICAgICAgICAgICJib3VuZHMiIDogewogICAgICAg
+        ICAgICAgICAibm9ydGhlYXN0IiA6IHsKICAgICAgICAgICAgICAgICAgImxh
+        dCIgOiAtMjMuNjc4MTUyNSwKICAgICAgICAgICAgICAgICAgImxuZyIgOiAt
+        NDYuNTU3ODI4NgogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAi
+        c291dGh3ZXN0IiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiAtMjMu
+        Njc4MTY5MywKICAgICAgICAgICAgICAgICAgImxuZyIgOiAtNDYuNTU3ODI5
+        MgogICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0sCiAgICAgICAgICAg
+        ICJsb2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICJsYXQiIDogLTIzLjY3
+        ODE2OTMsCiAgICAgICAgICAgICAgICJsbmciIDogLTQ2LjU1NzgyOTIKICAg
+        ICAgICAgICAgfSwKICAgICAgICAgICAgImxvY2F0aW9uX3R5cGUiIDogIlJB
+        TkdFX0lOVEVSUE9MQVRFRCIsCiAgICAgICAgICAgICJ2aWV3cG9ydCIgOiB7
+        CiAgICAgICAgICAgICAgICJub3J0aGVhc3QiIDogewogICAgICAgICAgICAg
+        ICAgICAibGF0IiA6IC0yMy42NzY4MTE5MTk3MDg1LAogICAgICAgICAgICAg
+        ICAgICAibG5nIiA6IC00Ni41NTY0Nzk5MTk3MDg1MQogICAgICAgICAgICAg
+        ICB9LAogICAgICAgICAgICAgICAic291dGh3ZXN0IiA6IHsKICAgICAgICAg
+        ICAgICAgICAgImxhdCIgOiAtMjMuNjc5NTA5ODgwMjkxNSwKICAgICAgICAg
+        ICAgICAgICAgImxuZyIgOiAtNDYuNTU5MTc3ODgwMjkxNQogICAgICAgICAg
+        ICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgfSwKICAgICAgICAgInBs
+        YWNlX2lkIiA6ICJFbDVTTGlCSWRXMWlaWEowYnlCTWRjT3RjeUJIWVhOMFlX
+        eGtieXdnTVRBZ0xTQktZWEprYVcwZ1pHOGdUV0Z5TENCVHc2TnZJRUpsY201
+        aGNtUnZJR1J2SUVOaGJYQnZJQzBnVTFBc0lEQTVOekkyTFRRek5Td2dRbkpo
+        YzJscyIsCiAgICAgICAgICJ0eXBlcyIgOiBbICJzdHJlZXRfYWRkcmVzcyIg
+        XQogICAgICB9CiAgIF0sCiAgICJzdGF0dXMiIDogIk9LIgp9Cg==
+    http_version: 
+  recorded_at: Thu, 17 Sep 2015 02:48:11 GMT
+recorded_with: VCR 2.9.3

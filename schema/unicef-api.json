@@ -1,0 +1,167 @@
+{
+  "$schema": "http://interagent.github.io/interagent-hyper-schema",
+  "type": [
+    "object"
+  ],
+  "definitions": {
+    "report": {
+      "$schema": "http://json-schema.org/draft-04/hyper-schema",
+      "title": "ZUP UNICEF API - Report",
+      "description": "The Report schema",
+      "stability": "development",
+      "strictProperties": true,
+      "type": [
+        "object"
+      ],
+      "definitions": {
+        "address": {
+          "description": "Child's address",
+          "type": [
+            "string"
+          ],
+          "example": "Rua Visconde de Pirajá, 211"
+        },
+        "created_at": {
+          "description": "when report was created",
+          "type": [
+            "string"
+          ]
+        },
+        "district": {
+          "description": "Child's neighborhood",
+          "type": [
+            "string"
+          ],
+          "example": "Ipanema"
+        },
+        "id": {
+          "description": "unique identifier of the report",
+          "readOnly": true,
+          "format": "uuid",
+          "type": [
+            "string"
+          ],
+          "example": "13"
+        },
+        "number": {
+          "description": "Child's address number",
+          "type": [
+            "number"
+          ],
+          "example": "211"
+        },
+        "reference": {
+          "description": "Reference to the child's address",
+          "type": [
+            "string"
+          ],
+          "example": "Bem na esquina"
+        },
+        "updated_at": {
+          "description": "when report was updated",
+          "type": [
+            "string"
+          ]
+        },
+        "user_id": {
+          "description": "ID of the user which is reporting",
+          "format": "uuid",
+          "type": [
+            "number"
+          ],
+          "example": "1320"
+        },
+        "identity": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/report/definitions/id"
+            }
+          ]
+        }
+      },
+      "links": [
+        {
+          "description": "Create a new report.",
+          "href": "/v1/reports",
+          "method": "POST",
+          "rel": "create",
+          "schema": {
+            "properties": {
+              "address": {
+                "$ref": "#/definitions/report/definitions/address"
+              },
+              "district": {
+                "$ref": "#/definitions/report/definitions/district"
+              },
+              "number": {
+                "$ref": "#/definitions/report/definitions/number"
+              },
+              "user_id": {
+                "$ref": "#/definitions/report/definitions/user_id"
+              },
+              "probable_cause": {
+                "description": "ID of the probable cause",
+                "type": [
+                  "number"
+                ],
+                "example": "2"
+              },
+              "reference": {
+                "$ref": "#/definitions/report/definitions/reference"
+              },
+              "reportee_birthdate": {
+                "description": "Child's birthday date",
+                "type": [
+                  "string"
+                ],
+                "example": "27/01/2000"
+              },
+              "reportee_mother_name": {
+                "description": "Child's mother name",
+                "type": [
+                  "string"
+                ],
+                "example": "Joana Joaquina"
+              },
+              "reportee_name": {
+                "description": "Child's name",
+                "type": [
+                  "string"
+                ],
+                "example": "Maria Joaquina"
+              }
+            },
+            "type": [
+              "object"
+            ],
+            "required": [
+              "user_id",
+              "reportee_name",
+              "address",
+              "number",
+              "district"
+            ]
+          },
+          "title": "Create"
+        }
+      ],
+      "properties": {
+      }
+    }
+  },
+  "properties": {
+    "report": {
+      "$ref": "#/definitions/report"
+    }
+  },
+  "description": "API for the UNICEF landing page",
+  "id": "zup-unicef-api",
+  "links": [
+    {
+      "description": "Git repository",
+      "href": "http://github.com/ntxcode/zup-unicef-api",
+      "rel": "self"
+    }
+  ],
+  "title": "ZUP UNICEF API"
+}
