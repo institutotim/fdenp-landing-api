@@ -14,18 +14,20 @@ Para instalar as dependências, utilize o bundler:
 
 ## Configuração
 
-Para configurar o projeto observe as seguintes variáveis:
+Primeiro, copie o arquivo `sample.env` para o arquivo `.env` e configure as seguintes variáveis:
 
 * `RACK_ENV` - environment para rodar o projeto: `development/production/test`
 * `ZUP_API_URL` - URL completa onde está rodando a API do ZUP
 * `ZUP_API_TOKEN` - Token para autenticação na API
 * `ZUP_API_REPORT_ID` - ID da categoria de relato
-* `ZUP_API_FLOW_ID` - ID do fluxo para cadastro do caso
-* `ZUP_API_STEP_ID` - ID da primeira etapa
 * `ZUP_API_CHILD_NAME_FIELD_ID` - ID do campo do nome da criança
 * `ZUP_API_CHILD_MOTHER_NAME_FIELD_ID` - ID do campo do nome da mãe da criança
 * `ZUP_API_CHILD_BIRTHDAY_FIELD_ID` - ID do campo aniversário da criança
-* `ZUP_API_ABANDON_CAUSE_FIELD_ID` - ID do campo de abandono de causa
+* `SENTRY_URL` - a DSN de sua instância do [Sentry](https://sentry.io)
+* `DATABASE_URL` - A URL para o banco de dados no Postgres
+* `ZENVIA_SHORTCODE` - O shortcode para ser utilizado na integração com a Zenvia
+* `ZENVIA_AUTH` - O código de autorização da API para integração com a Zenvia
+* `ZENVIA_FROM` - O nome que irá para a conversa (integração com a Zenvia)
 
 Altere o token para cookies seguros em `/config/initializers/secret_token.rb`.
 

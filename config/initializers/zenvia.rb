@@ -1,11 +1,12 @@
 class Zenvia
   URL = 'https://api-rest.zenvia360.com.br/services/send-sms'
   AUTHENTICATION = ENV['ZENVIA_AUTH']
+  FROM = ENV['ZENVIA_FROM']
 
   def self.send_sms(text, number)
     params = {
       "sendSmsRequest": {
-        "from": 'fdenp',
+        "from": FROM,
         "to": number.to_s,
         "msg": text,
         "callbackOption": 'NONE',
