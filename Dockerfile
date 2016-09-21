@@ -5,7 +5,8 @@ EXPOSE 80
 RUN cd /tmp \
     && curl -O http://nginx.org/download/nginx-1.8.0.tar.gz \
     && tar xzf nginx-1.8.0.tar.gz \
-    && gem install passenger \
+    && gem install rack --version 1.5.5 \
+    && gem install passenger --version 5.0.30 \
     && passenger-install-nginx-module --auto --nginx-source-dir=/tmp/nginx-1.8.0 --extra-configure-flags=none --languages=ruby
 
 RUN bundle config --global frozen 1 && \
