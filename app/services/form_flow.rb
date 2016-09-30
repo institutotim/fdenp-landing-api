@@ -14,58 +14,62 @@ class FormFlow
     1  => 'Adolescente em conflito com a lei',
     2  => 'Criança ou adolescente com deficiência(s)',
     3  => 'Criança ou adolescente com doença(s) que impeça(m) ou dificulte(m) a frequência à escola',
-    4  => 'Criança e adolescente em abrigos ou em situação de rua',
+    4  => 'Criança e adolescente situação de rua',
     5  => 'Criança ou adolescente em vítima de abuso / violência sexual',
-    6  => 'Evasão porque sente a escola desinteressante',
-    7  => 'Falta de documentação da criança ou adolescente',
-    8  => 'Falta de infraestrutura escolar',
-    9  => 'Falta de transporte escolar',
-    10 => 'Gravidez na adolescência',
-    11 => 'Racismo',
-    12 => 'Trabalho infantil',
-    13 => 'Violência na escola',
+    6  => 'Crianças ou adolescente em abrigo',
+    7  => 'Evasão porque sente a escola desinteressante',
+    8  => 'Falta de documentação da criança ou adolescente',
+    9  => 'Falta de infraestrutura escolar',
+    10  => 'Falta de transporte escolar',
+    11 => 'Gravidez na adolescência',
+    12 => 'Preconceito ou discriminação racial',
+    13 => 'Trabalho infantil',
     14 => 'Violência familiar'
+    15 => 'Violência na escola',
+
   }
 
   CATEGORIES_MAPPING = {
     1  => 15,
     2  => 7,
     3  => 8,
-    4  => 14,
+    4  => 21,
     5  => 11,
-    6  => 5,
-    7  => 4,
-    8  => 1,
-    9  => 16,
-    10 => 9,
-    11 => 12,
-    12 => 13,
-    13 => 2,
+    6  => 14,
+    7  => 5,
+    8  => 4,
+    9  => 1,
+    10 => 16,
+    11 => 9,
+    12 => 12,
+    13 => 13,
     14 => 10
+    15 => 2
+
   }
 
   STEPS = [
     {
-      question: 'Você gostaria de enviar um alerta ao Fora da escola não pode? (S/N)',
+      question: 'escola: Você gostaria de enviar um alerta ao Fora da escola não pode? (S/N)',
       confirmation: true
     },
     {
-      question: 'Qual o seu e-mail de cadastro?'
+      question: 'escola: Qual o seu e-mail de cadastro?'
     },
     {
-      question: 'Qual o nome completo da criança?'
+      question: 'escola: Qual o nome completo da criança?'
     },
     {
-      question: 'Qual o nome completo da mãe ou responsável?'
+      question: 'escola: Qual o nome completo da mãe ou responsável?'
     },
     {
-      question: 'Qual o logradouro do endereço?'
+      question: 'escola: Qual o logradouro do endereço?'
     },
     {
-      question: 'Qual o bairro?'
+      question: 'escola: Qual o bairro?'
     },
     {
-      question: 'Qual a possível causa da criança estar fora da escola?',
+      question: 'escola: Qual a possível causa da criança estar fora da escola?',
       validation: :validate_category_code
     }
   ]
