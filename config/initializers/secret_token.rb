@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Application.config.secret_key_base = 'CHANGE_ME'
+Application.config.secret_key_base = ENV['SECRET_TOKEN'] || '344e9db0bb64ee636d8992b4f0832ea5a12143a5721d18f2640f4a416ddfc04641a6e1d5089f145e4772f4ed3da15ec86c545960e49560de1d98782da61f96b4'

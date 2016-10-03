@@ -24,7 +24,7 @@ class FormFlow
     11 => 'Gravidez na adolescência',
     12 => 'Preconceito ou discriminação racial',
     13 => 'Trabalho infantil',
-    14 => 'Violência familiar'
+    14 => 'Violência familiar',
     15 => 'Violência na escola',
 
   }
@@ -43,33 +43,33 @@ class FormFlow
     11 => 9,
     12 => 12,
     13 => 13,
-    14 => 10
-    15 => 2
+    14 => 10,
+    15 => 2,
 
   }
 
   STEPS = [
     {
-      question: 'escola: Você gostaria de enviar um alerta ao Fora da escola não pode? (S/N)',
+      question: 'Você gostaria de enviar um alerta ao Fora da escola não pode? (S/N)',
       confirmation: true
     },
     {
-      question: 'escola: Qual o seu e-mail de cadastro?'
+      question: 'Qual o seu e-mail de cadastro?'
     },
     {
-      question: 'escola: Qual o nome completo da criança?'
+      question: 'Qual o nome completo da criança?'
     },
     {
-      question: 'escola: Qual o nome completo da mãe ou responsável?'
+      question: 'Qual o nome completo da mãe ou responsável?'
     },
     {
-      question: 'escola: Qual o logradouro do endereço?'
+      question: 'Qual o logradouro do endereço?'
     },
     {
-      question: 'escola: Qual o bairro?'
+      question: 'Qual o bairro?'
     },
     {
-      question: 'escola: Qual a possível causa da criança estar fora da escola?',
+      question: 'Qual a possível causa da criança estar fora da escola?',
       validation: :validate_category_code
     }
   ]
