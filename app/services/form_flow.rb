@@ -3,6 +3,7 @@
 # * Resets the entire flow
 # * Validates questions
 # * Creates the report if everything's ok
+
 class FormFlow
   SHORT_CODE = ENV['ZENVIA_SHORTCODE']
 
@@ -20,7 +21,7 @@ class FormFlow
     7  => 'Evasão porque sente a escola desinteressante',
     8  => 'Falta de documentação da criança ou adolescente',
     9  => 'Falta de infraestrutura escolar',
-    10  => 'Falta de transporte escolar',
+    10 => 'Falta de transporte escolar',
     11 => 'Gravidez na adolescência',
     12 => 'Preconceito ou discriminação racial',
     13 => 'Trabalho infantil',
