@@ -173,6 +173,7 @@ class FormFlow
     if (current_step + 1) == 6
       categories_codes_msg.each do |msg|
         send_sms(msg.to_s)
+        sleep(2)
       end
     end
 
@@ -247,6 +248,6 @@ class FormFlow
   end
 
   def remove_short_code(string)
-    string.gsub(/#{SHORT_CODE}/i, '')
+    string.gsub(/#{SHORT_CODE}/i, '').strip!
   end
 end
